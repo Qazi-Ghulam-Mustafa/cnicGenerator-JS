@@ -88,7 +88,7 @@ function submitBtn() {
     console.log(age.value)
     if (hasError == false) {
         var a = (Math.random() * 10000000000000).toFixed(0)
-        var Cnic = a.toString().substring(0, 4) + "-" + a.toString().substring(4, 12) + "-" + a.toString().substring(12)
+        var Cnic = a.toString().substring(0, 5) + "-" + a.toString().substring(4, 11) + "-" + a.toString().substring(12)
         cnic.value = Cnic
         CnicSuccessfuly.innerText = "You Got Cnic Successfully"
         console.log(cnic.value)
